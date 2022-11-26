@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern css</title>
+    <style>
+      .body {
+        height: 2000px;
+      }
+      .kotak1 {
+        width: 75px;
+        height: 150px;
+        background-color: rgb(127, 255, 212);
+        margin: auto;
+        border-radius: 0 75px 75px 0;
+        opacity: 0.2;
+        position: relative;
+        z-index: 10;
+      }
+
+      .p {
+        position: relative;
+        top: -100px;
+      }
+
+      .kotak2 {
+        width: 150px;
+        padding: 150px;
+        border-radius: 15px;
+        margin: 20px;
+        background-color: #2c2c2c;
+        margin: auto;
+        border: 1px solid #333;
+        /* box-shadow: [inset] <x-offset> <y-offset> <blur> [size] <color>; */
+        box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+        transition: 0.5s;
+      }
+
+      .kotak2:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px 2px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial;
+        font-size: 100px;
+        color: cyan;
+        text-shadow: 2px 2px 0px lightpink;
+        transition: 2s;
+      }
+
+      h1:hover {
+        transform: translateY(-10px);
+        text-shadow: 4px 4px 0 red;
+      }
+
+      .kotak3 {
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        margin: auto;
+        transform: translatey(100px);
+        transform: scale(0.5);
+        transform: skewy(-20deg);
+        transition: 3s background-color, 3s 3s transform, 3s;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+      }
+
+      .kotak3:hover {
+        transform: skewY(20deg);
+        background-color: rgb(25, 210, 210);
+        transform: translateY(0px);
+        transform: rotate(45deg);
+        font-size: 20px;
+        text-align: right;
+        transform: skew(0deg);
+        border-radius: 75%;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak1"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
+      reprehenderit officiis similique animi aperiam autem excepturi esse
+      officia alias. Nemo debitis vero similique perferendis quae qui sunt
+      maiores totam.
+    </p>
+
+    <div class="kotak2"></div>
+
+    <h1>Lisvindanu</h1>
+
+    <div class="kotak3">1</div>
+  </body>
+</html>
