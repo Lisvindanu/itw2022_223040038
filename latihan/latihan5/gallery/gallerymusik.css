@@ -117,7 +117,7 @@ h1 {
   animation: slidedownfadeclose 0.3s 0.3s forwards;
 }
 
-.overlay .gotolink1 {
+.overlay .gotolink {
   position: fixed;
   top: 680px;
   left: 50%;
@@ -135,7 +135,7 @@ h1 {
   animation: slidedownfadeclose 0.3s 0.3s forwards;
 }
 
-.overlay .gotolink2 {
+.overlay .gotolink {
   position: fixed;
   top: 680px;
   left: 50%;
@@ -149,7 +149,7 @@ h1 {
   opacity: 0;
 }
 
-.overlay:target .gotolink2 {
+.overlay:target .gotolink {
   animation: slidedownfadeL2 0.3s 0.3s forwards;
 }
 
