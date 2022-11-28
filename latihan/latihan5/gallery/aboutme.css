@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(17, 3, 31);
+}
+
+.aboutme {
+  width: 600px;
+  height: 400px;
+  background-color: #010e2b;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 2px 0.5px rgba(18, 11, 2, 0.522);
+  border-radius: 20px;
+  padding-left: 20px;
+  position: relative;
+  top: 200px;
+  box-sizing: border-box;
+}
+
+.aboutme #fotodanu {
+  float: left;
+  overflow: hidden;
+  border: 8px ridge rgb(35, 0, 0);
+  margin-left: 50;
+  margin-right: 5px;
+}
+
+.aboutme #tentangsaya {
+  position: relative;
+  top: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: monospace;
+  color: #040404;
+  text-shadow: 3px 0px 2px rgb(79, 19, 99);
+  border: 1px;
+}
+
+.aboutme #APA,
+a {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: monospace;
+  color: #f1f1f1;
+  text-shadow: 3px 0px 2px rgb(104, 13, 134);
+  text-decoration: none;
+}
+
+.aboutme #kosong {
+  opacity: 0;
+}
+
+.aboutme #insta:hover {
+  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  text-shadow: 2px 0px 2px blue;
+}
+
+.backtogallery {
+  position: relative;
+  top: 190px;
+  left: 250px;
+}
+
+.backtogallery a:hover {
+  background-color: #010e2b;
+  color: rgb(130, 157, 203);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0, 5;
+  z-index: 9999;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.442);
+}
+
+.overlay:target img {
+  animation: zoomdanfade 1s;
+}
+
+.overlay .close {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 1px solid salmon;
+  line-height: 20px;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slidedownfade 0.3s 0.3s forwards;
+}
+
+@keyframes zoomdanfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slidedownfade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 20;
+  }
+}

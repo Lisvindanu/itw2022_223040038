@@ -19,12 +19,13 @@ h1 {
 }
 
 .container {
-  width: 600px;
+  width: 500px;
   background-color: #293758;
   margin: auto;
   padding: 20px;
   box-shadow: 0 0 2px 0.5px rgba(18, 11, 2, 0.522);
   border-radius: 20px;
+  padding-left: 20px;
 }
 
 .gallery li {
@@ -36,6 +37,7 @@ h1 {
   float: left;
   margin-right: 21px;
   position: relative;
+  margin-left: 20px;
 }
 
 .gallery li,
@@ -188,4 +190,28 @@ h1 {
     opacity: 100;
     margin-top: 20px;
   }
+}
+
+/* nav */
+
+.next {
+  width: 40px;
+  height: 40px;
+  background-image: url(../gallery/img/next.png);
+  position: absolute;
+  text-indent: -99999999px;
+  top: 50%;
+  right: 5px;
+  margin-right: 200px;
+}
+
+.prev {
+  width: 40px;
+  height: 40px;
+  background-image: url(../gallery/img/prev.png);
+  position: absolute;
+  text-indent: -99999px;
+  top: 50%;
+  left: 5px;
+  margin-left: 200px;
 }
